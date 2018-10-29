@@ -17,6 +17,7 @@ router.get('/', (req,res)=>{
 // @desc    Create a post
 // @access  Public
 router.post('/', (req,res)=>{
+    console.log(req.body.name)
     const newItem = new Item({
         name: req.body.name
     });

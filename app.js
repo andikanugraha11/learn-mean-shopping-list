@@ -8,6 +8,7 @@ const app = express();
 
 // BodyParser MiddleWare
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // DB Config
 const config = require("./config/apps-config");
@@ -20,6 +21,7 @@ mongoose
 
 // Routes
 app.use('/api/items', items);
+
 
 const port = process.env.PORT || 8080;
 
