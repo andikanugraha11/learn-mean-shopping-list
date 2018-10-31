@@ -33,6 +33,9 @@ class AppNavbar extends Component {
                                 <NavItem>
                                     <NavLink href="https://www.andika.id">Site</NavLink>
                                 </NavItem>
+                                <NavItem>
+                                    <NavLink href="https://www.github.com/andikanugraha11">Github</NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </Container>
