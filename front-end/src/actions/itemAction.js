@@ -6,4 +6,8 @@ export const getItems = () => {
     };
 }
 
+export const deleteItem = () => {
+
+}
+
 // 20.00

@@ -6,9 +6,8 @@ import {
     Button
 } from 'reactstrap';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
-import uuid from 'uuid';
 import { connect } from 'react-redux';
-import { getItems } from '../actions/itemAction';
+import { getItems, deleteItem } from '../actions/itemAction';
 import PropTypes from 'prop-types';
 class ShoppingList extends Component {
 
@@ -64,4 +63,4 @@ const mapStateToProps = (state) => ({
     item : state.item //index reducer
 })
 
-export default connect(mapStateToProps, {getItems})(ShoppingList);
+export default connect(mapStateToProps, {getItems, deleteItem})(ShoppingList);
