@@ -6,8 +6,11 @@ export const getItems = () => {
     };
 }
 
-export const deleteItem = () => {
-
+export const deleteItem = (id) => {
+    return {
+        type : DELETE_ITEM,
+        payload : id
+    };
 }
 
 // 20.00
